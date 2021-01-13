@@ -4,7 +4,7 @@ import Main from "./pages/main";
 import About from "./pages/about";
 import Nav from "./components/nav";
 import stocksArr from "./stock-data.js";
-import Dashboard from "./pages/dasbord";
+import Dashboard from "./pages/dashboard";
 import Stock from "./pages/stock";
 
 function App() {
