@@ -8,9 +8,9 @@ const Stock = (props) => {
   // })
   console.log("Stock comp all props - ", props);
 
-  //Make the API call in App.js
+  //Make the API call to get info
   const symbol = props.match.params.symbol;
-  const apiKey = "254475bad1d049ae20f910878be9d1be";
+  const apiKey = "usekeyinvscode";
   const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`;
   console.log("Symbol is: ", symbol);
 
