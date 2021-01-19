@@ -8,7 +8,6 @@ const Stock = (props) => {
   // })
   console.log("Stock comp all props - ", props);
 
-  //Fetch(url/${REACT_APP_APIKEY})
   //Make the API call in App.js
   const symbol = props.match.params.symbol;
   //const apiKey = "254475bad1d049ae20f910878be9d1be";
