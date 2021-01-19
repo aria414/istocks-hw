@@ -7,14 +7,17 @@ const Stock = (props) => {
   //     )
   // })
   console.log("Stock comp all props - ", props);
-
+  //Fetch(url/${REACT_APP_APIKEY})
   //Make the API call in App.js
   const symbol = props.match.params.symbol;
-  const apiKey = "254475bad1d049ae20f910878be9d1be";
-  const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`;
+  //const apiKey = "254475bad1d049ae20f910878be9d1be";
+  const { REACT_APP_APIKEY } = process.env;
+
+  const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${REACT_APP_APIKEY}`;
   console.log("Symbol is: ", symbol);
 
   const [stock, setStock] = React.useState(null);
+
   const getStock = async () => {
     const response = await fetch(url);
     const data = await response.json();
